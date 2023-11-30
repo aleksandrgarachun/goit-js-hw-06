@@ -5,7 +5,7 @@ class Storage  {
   }
 
   getItems() {
-    return this.#items
+    return this.#items;
   }
 
   addItem(newItem) {
@@ -15,7 +15,7 @@ class Storage  {
   removeItem(itemToRemove) {
   const removeItem = this.#items.indexOf(itemToRemove);
   if(removeItem !== -1) {
-    return this.#items.splice(itemToRemove, 1);
+    return this.#items.splice(removeItem, 1);
   } 
  }
 
